@@ -1,0 +1,41 @@
+version: 2
+
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+      - "python"
+    open-pull-requests-limit: 10
+    groups:
+      langchain:
+        patterns:
+          - "langchain*"
+          - "langgraph*"
+      openai:
+        patterns:
+          - "langchain-openai*"
+          - "openai*"
+      fastapi:
+        patterns:
+          - "fastapi*"
+          - "uvicorn*"
+          - "pydantic*"
+      torch:
+        patterns:
+          - "torch*"
+          - "torchvision*"
+          - "transformers*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    open-pull-requests-limit: 5
