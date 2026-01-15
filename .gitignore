@@ -1,0 +1,110 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Secrets / environment
+.env.local
+.env.*.local
+*.secrets
+
+# Data and models
+data/
+models/*.pth
+models/*.pth.tar
+models/*.bin
+models/*.safetensors
+uploads/
+
+# Qdrant local storage
+data/qdrant_db/
+data/docs_db/
+data/parsed_docs/
+
+# Test and coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+nosetests.xml
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Linting / formatting
+.ruff_cache/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Docker volumes
+docker-volumes/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+tmp/
+temp/
+
+# Documentation build
+docs/_build/
+docs/site/
+
+# Node (if any frontend)
+node_modules/
+package-lock.json
+yarn.lock
