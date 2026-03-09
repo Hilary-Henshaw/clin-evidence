@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: clinevidence-qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/healthz"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: clinevidence-app
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - QDRANT_URL=http://qdrant:6333
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./uploads:/app/uploads
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  qdrant_data:
