@@ -15,7 +15,7 @@
 ICU clinicians face one of the most demanding information environments
 in medicine. Within minutes, a bedside decision may require synthesising
 knowledge from clinical guidelines, recent trial data, imaging findings,
-and patient-specific context — often simultaneously and under significant
+and patient-specific context often simultaneously and under significant
 time pressure. Existing tools require clinicians to leave their workflow,
 open multiple databases, and manually evaluate contradictory evidence.
 
@@ -23,7 +23,7 @@ ClinEvidence addresses this gap with a multi-agent AI system that
 integrates directly into the clinical workflow. Clinicians can ask
 natural language questions and receive evidence-based answers sourced
 from ingested clinical guidelines, real-time PubMed literature, and
-web evidence — all within seconds. They can also upload medical images
+web evidence all within seconds. They can also upload medical images
 for AI-assisted interpretation of chest X-rays, brain MRIs, and skin
 lesions, with mandatory human validation before results are acted upon.
 
@@ -39,35 +39,35 @@ safety guardrails.
 
 ## Key Features
 
-1. **Multi-Agent Routing** — LangGraph automatically routes each query
+1. **Multi-Agent Routing**: LangGraph automatically routes each query
    to the most appropriate agent: knowledge base RAG, web/PubMed
    evidence search, or direct clinical conversation.
 
-2. **Hybrid RAG Pipeline** — Documents are indexed using BM25 sparse
+2. **Hybrid RAG Pipeline**: Documents are indexed using BM25 sparse
    retrieval combined with dense vector embeddings in Qdrant, then
    reranked with a cross-encoder model for maximum precision.
 
-3. **Clinical Document Ingestion** — Docling extracts structured
+3. **Clinical Document Ingestion**: Docling extracts structured
    content from PDFs including OCR text, tables, formulas, and images.
    GPT-4o summarises extracted figures in clinical language.
 
-4. **Medical Image Analysis** — Three specialised PyTorch models
+4. **Medical Image Analysis**: Three specialised PyTorch models
    analyse chest X-rays (COVID-19/normal), brain MRIs (4-class tumour
    classification), and skin lesions (7-class dermoscopy).
 
-5. **Human-in-the-Loop Validation** — Imaging analyses and
+5. **Human-in-the-Loop Validation**: Imaging analyses and
    high-confidence responses trigger LangGraph interrupt workflows,
    pausing until a clinician explicitly approves or rejects.
 
-6. **Dual-Layer Safety Filtering** — Every input is screened for
+6. **Dual-Layer Safety Filtering**: Every input is screened for
    harmful content, prompt injection, and non-medical requests. Every
    output is verified for medical disclaimers and dangerous advice
    before delivery.
 
-7. **Voice Interface** — Full Eleven Labs integration for speech
+7. **Voice Interface**: Full Eleven Labs integration for speech
    transcription and synthesis, enabling hands-free clinical queries.
 
-8. **Production-Ready Infrastructure** — FastAPI with async endpoints,
+8. **Production-Ready Infrastructure**: FastAPI with async endpoints,
    Prometheus metrics, rate limiting, request tracing, structured
    logging, Docker Compose deployment, and comprehensive test coverage.
 
