@@ -5,15 +5,14 @@
 <p align="center">Clinical evidence retrieval and diagnostic support for ICU teams, powered by multi-agent AI.</p>
 
 <p align="center">
-  <a href="https://github.com/OWNER/clinevidence/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/OWNER/clinevidence/ci.yml?branch=main&label=CI&logo=github" alt="CI Status" /></a>
-  <a href="https://github.com/OWNER/clinevidence/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/coverage-48%25%2B-yellow?logo=pytest" alt="Test Coverage" /></a>
+  <a href="https://github.com/Hilary-Henshaw/clin-evidence/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Hilary-Henshaw/clin-evidence/ci.yml?branch=main&label=CI&logo=github" alt="CI Status" /></a>
+  <a href="https://github.com/Hilary-Henshaw/clin-evidence/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/coverage-48%25%2B-yellow?logo=pytest" alt="Test Coverage" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" /></a>
-  <a href="https://github.com/OWNER/clinevidence/releases"><img src="https://img.shields.io/badge/version-1.0.0-brightgreen" alt="Version 1.0.0" /></a>
+  <a href="https://github.com/Hilary-Henshaw/clin-evidence/releases"><img src="https://img.shields.io/badge/version-1.0.0-brightgreen" alt="Version 1.0.0" /></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white" alt="Python 3.11+" /></a>
 </p>
 
 <p align="center">
-  <a href="#demo">Demo</a> |
   <a href="#key-features">Features</a> |
   <a href="#quick-start">Quick Start</a> |
   <a href="#architecture">Architecture</a> |
@@ -23,20 +22,6 @@
   <a href="#runbook">Runbook</a> |
   <a href="#contributing">Contributing</a>
 </p>
-
----
-
-## Demo
-
-<p align="center"><img src="assets/demo.gif" alt="Demo" width="720" /></p>
-<!-- TODO: record 30s interaction: question → streaming response → citations -->
-
-<details>
-<summary>Screenshots</summary>
-
-<!-- TODO: add screenshots after running scripts/capture-screenshots.py -->
-
-</details>
 
 ---
 
@@ -985,4 +970,4 @@ ClinEvidence is built on top of several excellent open-source projects and servi
 - [FastAPI](https://github.com/tiangolo/fastapi) for the REST API layer
 - [NCBI E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25501/) for PubMed literature access
 
-This software is intended to assist qualified clinicians and does not replace clinical judgement. All AI-generated outputs must be reviewed and verified by a licensed healthcare professional before clinical use.
+This software is intended to assist qualified clinicians and does not replace clinical judgement.
