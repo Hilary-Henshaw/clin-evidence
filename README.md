@@ -4,7 +4,8 @@
 <p align="center">Clinical evidence retrieval and diagnostic support for ICU teams</p>
 
 <p align="center">
-  <a href="https://github.com/clin-evidence/clin-evidence/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/clin-evidence/clin-evidence/ci.yml?branch=main&label=CI" alt="CI"></a>
+  <a href="https://github.com/Hilary-Henshaw/clin-evidence/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Hilary-Henshaw/clin-evidence/ci.yml?branch=main&label=CI&logo=github" alt="CI Status" /></a>
+  <a href="https://github.com/Hilary-Henshaw/clin-evidence/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/coverage-48%25%2B-yellow?logo=pytest" alt="Test Coverage" /></a>
   <img src="https://img.shields.io/badge/python-3.11+-blue" alt="Python 3.11+">
   <img src="https://img.shields.io/badge/version-1.0.0-green" alt="Version 1.0.0">
   <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="MIT License">
