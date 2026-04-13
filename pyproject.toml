@@ -24,10 +24,10 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Medical Science Apps.",
 ]
 dependencies = [
-    "fastapi>=0.115.0",
-    "uvicorn[standard]>=0.30.0",
-    "pydantic>=2.10.0",
-    "pydantic-settings>=2.6.0",
+    "fastapi>=0.135.3",
+    "uvicorn[standard]>=0.44.0",
+    "pydantic>=2.13.0",
+    "pydantic-settings>=2.13.1",
     "itsdangerous>=2.2.0",
     "python-multipart>=0.0.12",
     "python-dotenv>=1.0.0",
