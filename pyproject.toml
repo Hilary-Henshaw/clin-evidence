@@ -52,7 +52,7 @@ dependencies = [
     "slowapi>=0.1.9",
     "prometheus-fastapi-instrumentator>=7.0.0",
     "numpy>=1.26.0",
-    "scikit-learn>=1.4.0",
+    "scikit-learn>=1.8.0",
     "requests>=2.32.0",
     "werkzeug>=3.0.0",
 ]
